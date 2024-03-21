@@ -22,9 +22,9 @@ trait linAlg {
      * get dot product of m.m | m.v | v.v
      * 
      * @param \Np\matrix|\Np\vector $d
-     * @return matrix|vector
+     * @return matrix|vector|float
      */
-    public function dot(matrix|vector $d): matrix|vector {
+    public function dot(matrix|vector $d): matrix|vector|float {
         if ($this instanceof matrix) {
             if ($d instanceof matrix) {
                 return $this->dotMatrix($d);
